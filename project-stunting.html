@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Child Stunting | Patricia Felisca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Patricia Felisca</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <header class="page-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#projects">Back to projects</a>
+      <p class="kicker">Project 03 · Analysis</p>
+      <h1>Child Stunting and Socioeconomic Factors</h1>
+      <p class="lede">A group academic project on how poverty, education, and other country-level factors relate to child stunting risk.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="block">
+          <h2>Overview</h2>
+          <p>The project looks at stunting risk across countries and asks which socioeconomic indicators move together with that risk. The table is small: 307 rows from 77 countries, so the result is an analytical case, not a production model.</p>
+        </div>
+        <div class="block">
+          <h2>What I worked on</h2>
+          <ul>
+            <li>Business understanding and the project question.</li>
+            <li>Feature engineering for the socioeconomic variables.</li>
+            <li>A Random Forest classifier and a feature-importance review.</li>
+            <li>A Streamlit page used to explain the result.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h2>What the analysis is for</h2>
+          <p>The useful output is the ranking of socioeconomic factors, such as poverty, fertility, literacy, and GDP, not a single accuracy number. Prevalence of stunting was kept out of the predictors so the model would not be explaining the label with a near-copy of the label.</p>
+        </div>
+        <div class="block">
+          <h2>Tools</h2>
+          <div class="tools">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>scikit-learn</span>
+            <span>Random Forest</span>
+            <span>Streamlit</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/feliscaclarrisya-sys/child-stunting-socioeconomic">View GitHub repository</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
