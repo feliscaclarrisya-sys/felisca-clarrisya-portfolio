@@ -1,148 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patricia Felisca Clarrisya | Information Systems Portfolio</title>
-  <meta name="description" content="Portfolio of Patricia Felisca Clarrisya, an Information Systems student at Universitas Multimedia Nusantara focused on data analysis, business intelligence, and machine learning.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Felisca | Information Systems Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f3eee6; --card:#fffdf9; --ink:#2c2824; --muted:#6e665e; --line:#e3d8c8; --accent:#6f5b49; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:Outfit,sans-serif; line-height:1.65; }
+a { color:var(--accent); }
+.nav { display:flex; justify-content:space-between; align-items:center; padding:18px 7%; position:sticky; top:0; background:rgba(243,238,230,.94); border-bottom:1px solid var(--line); }
+.logo { color:var(--ink); text-decoration:none; font-weight:600; letter-spacing:.08em; }
+.nav nav { display:flex; gap:22px; }
+.nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+.wrap { width:min(1040px, calc(100% - 36px)); margin:0 auto; }
+.hero { padding:70px 0 20px; }
+.pill { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--accent); border-radius:999px; padding:6px 12px; font-size:12px; letter-spacing:.08em; font-weight:600; }
+h1 { font-family:Fraunces,serif; font-weight:560; font-size:clamp(56px,8vw,88px); line-height:.92; margin:14px 0 8px; }
+.sub, .lead, .cap { color:var(--muted); }
+.intro { max-width:640px; }
+.btns { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+.btn { text-decoration:none; border-radius:8px; padding:10px 14px; font-size:14px; font-weight:600; }
+.btn.primary { background:var(--ink); color:#f3eee6; }
+.btn.ghost { border:1px solid var(--line); color:var(--ink); background:var(--card); }
+section { padding:52px 0; }
+h2 { font-family:Fraunces,serif; font-weight:560; font-size:34px; margin:0 0 8px; }
+.eyebrow { color:var(--accent); letter-spacing:.14em; font-size:12px; font-weight:600; margin:0 0 8px; }
+.skills { display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:14px 0 0; }
+.skills li { background:var(--card); border:1px solid var(--line); border-radius:999px; padding:7px 12px; font-size:14px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:16px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; display:block; }
+.card img { width:100%; height:180px; object-fit:cover; object-position:top; background:#fff; display:block; }
+.card div { padding:14px 16px 16px; }
+.no { color:var(--accent); font-size:12px; letter-spacing:.12em; font-weight:600; margin:0; }
+.card h3 { font-family:Fraunces,serif; font-size:22px; margin:6px 0; font-weight:560; }
+.card p { color:var(--muted); font-size:14px; margin:0; }
+.case { border-top:1px solid var(--line); }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0; }
+.stat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+.stat b { display:block; font-family:Fraunces,serif; font-size:24px; font-weight:560; }
+.stat span { color:var(--muted); font-size:13px; }
+.photo, .photos .photo { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px; margin-top:12px; }
+.photos { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.photo img { width:100%; border-radius:8px; display:block; background:#fff; }
+.wide { grid-column:1 / -1; }
+ul { color:var(--muted); }
+footer { border-top:1px solid var(--line); color:var(--muted); padding:20px 7%; font-size:13px; }
+@media (max-width:800px) { .grid,.stats,.photos { grid-template-columns:1fr; } .nav nav { display:none; } }
+</style>
 </head>
 <body>
-  <nav>
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html">Patricia Felisca</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+<header class="nav">
+  <a class="logo" href="#top">FELISCA</a>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <p class="pill">OPEN TO INTERNSHIP OPPORTUNITIES</p>
+    <h1>Felisca</h1>
+    <p class="sub">Patricia Felisca Clarrisya · Information Systems · Universitas Multimedia Nusantara</p>
+    <p class="intro">Fifth-semester student in the Big Data concentration, GPA 3.78 / 4.00. I prepare data, build dashboards and classification models, then explain what the result can and cannot say.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn ghost" href="mailto:feliscaclarrisya@gmail.com">Email</a>
     </div>
-  </nav>
+  </div>
 
-  <header class="hero">
-    <div class="wrap">
-      <p class="kicker">Open to internship opportunities</p>
-      <h1>Patricia Felisca Clarrisya</h1>
-      <p class="lede">Information Systems student at Universitas Multimedia Nusantara, focused on data analysis, business intelligence, and machine learning.</p>
-      <div class="meta">
-        <span>Information Systems · UMN</span>
-        <span>Big Data</span>
-        <span>GPA 3.78 / 4.00</span>
-      </div>
+  <section id="about"><div class="wrap">
+    <p class="eyebrow">ABOUT</p>
+    <h2>About</h2>
+    <p class="lead">Academic work in data analysis, business intelligence, and machine learning with Python, SQL, and Power BI. These are group projects. Each note below is the part I worked on.</p>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <p class="eyebrow">SKILLS</p>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>SQL</li>
+      <li>Power BI</li><li>Power Query</li><li>DAX</li><li>Streamlit</li>
+      <li>Google BigQuery</li><li>Tableau</li><li>Feature engineering</li>
+    </ul>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <p class="eyebrow">PROJECTS</p>
+    <h2>Selected work</h2>
+    <div class="grid">
+      <a class="card" href="#warehouse">
+        <img src="https://h.uguu.se/SlAYeNPE.jpg" alt="Publication count by faculty and journal quartile">
+        <div><p class="no">01</p><h3>Publication Data Warehouse</h3><p>Power BI view of publication volume against Q1–Q4 journal quality.</p></div>
+      </a>
+      <a class="card" href="#disease">
+        <img src="https://n.uguu.se/znTRALPP.jpg" alt="Logistic regression coefficients">
+        <div><p class="no">02</p><h3>Lifestyle Disease Risk</h3><p>Logistic regression on lifestyle indicators, with a Streamlit checker.</p></div>
+      </a>
+      <a class="card" href="#stunting">
+        <img src="https://h.uguu.se/pyeLQcCN.jpg" alt="Countries with the highest stunting prevalence">
+        <div><p class="no">03</p><h3>Child Stunting Factors</h3><p>Which countries and years sit at the high end of stunting prevalence.</p></div>
+      </a>
     </div>
-  </header>
+  </div></section>
 
-  <main>
-    <section id="about">
-      <div class="wrap about">
-        <p class="kicker">Get to know me</p>
-        <h2>About</h2>
-        <p>I am a fifth-semester student interested in turning operational and research data into something a team can actually use: a cleaned table, a dashboard, or a model with a clear limitation.</p>
-        <p>My academic work covers data preparation, SQL and data warehousing, Power BI, and classification models in Python. I like projects where the result is an explanation, not only a score.</p>
-      </div>
-    </section>
+  <section class="case" id="warehouse"><div class="wrap">
+    <p class="eyebrow">PROJECT 01 · POWER BI</p>
+    <h2>Publication Data Warehouse</h2>
+    <p class="lead">Faculty publication data from 2020 to 2025, modeled as a star schema. The question was whether more papers also meant a higher share of Q1 journals.</p>
+    <div class="stats">
+      <div class="stat"><b>2020–2025</b><span>Years covered</span></div>
+      <div class="stat"><b>Q1–Q4</b><span>CiteScore quartiles</span></div>
+      <div class="stat"><b>2 facts</b><span>Publication and author</span></div>
+      <div class="stat"><b>SCD 1</b><span>Lecturer dimension</span></div>
+    </div>
+    <div class="photo">
+      <img src="https://h.uguu.se/SlAYeNPE.jpg" alt="Publication count by faculty and SJR quartile">
+      <p class="cap">Publication count by faculty and SJR quartile. A tall bar is volume, not automatically Q1 quality.</p>
+    </div>
+    <h3>What I worked on</h3>
+    <ul>
+      <li>Cleaning lecturer and publication fields in Power Query.</li>
+      <li>Star schema with fact and dimension tables.</li>
+      <li>DAX measures for publication count, Q1–Q4, and Q1 share.</li>
+      <li>Dashboard pages for trend, quartile mix, and collaboration.</li>
+    </ul>
+    <p><a href="https://github.com/feliscaclarrisya-sys/publication-warehouse-powerbi">GitHub repository</a></p>
+  </div></section>
 
-    <section id="skills">
-      <div class="wrap">
-        <p class="kicker">What I work with</p>
-        <h2>Skills</h2>
-        <ul class="skills">
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Power BI</li>
-          <li>Power Query and DAX</li>
-          <li>Pandas</li>
-          <li>scikit-learn</li>
-          <li>Streamlit</li>
-          <li>Google BigQuery</li>
-          <li>Tableau</li>
-          <li>Data visualization</li>
-        </ul>
-      </div>
-    </section>
+  <section class="case" id="disease"><div class="wrap">
+    <p class="eyebrow">PROJECT 02 · MACHINE LEARNING</p>
+    <h2>Lifestyle Disease Risk</h2>
+    <p class="lead">Classifies low versus high disease risk from lifestyle and basic health indicators. The data is a public synthetic set, so the app is a methods demo, not a medical tool.</p>
+    <div class="stats">
+      <div class="stat"><b>83%</b><span>Test accuracy</span></div>
+      <div class="stat"><b>0.62</b><span>High-risk precision</span></div>
+      <div class="stat"><b>0.81</b><span>High-risk recall</span></div>
+      <div class="stat"><b>0.70</b><span>High-risk F1</span></div>
+    </div>
+    <div class="photos">
+      <div class="photo"><img src="https://n.uguu.se/znTRALPP.jpg" alt="Coefficient chart"><p class="cap">BMI and blood pressure raise predicted risk. Sleep hours and daily steps lower it.</p></div>
+      <div class="photo"><img src="https://h.uguu.se/CFbDnheC.jpg" alt="Confusion matrix"><p class="cap">16,000 test rows. SMOTE was applied to the training set only.</p></div>
+      <div class="photo wide"><img src="https://h.uguu.se/CkkXaPtN.jpg" alt="Streamlit app"><p class="cap">Streamlit checker. <a href="https://project-datnal-ht76ctlxjsdbjvpdn2fgev.streamlit.app/">Open the app</a>.</p></div>
+    </div>
+    <h3>What I worked on</h3>
+    <ul>
+      <li>Feature engineering for blood pressure, obesity, low sleep, and a simple risk score.</li>
+      <li>Scaling and SMOTE fitted on the training set only.</li>
+      <li>Logistic regression tuned with grid search, then read through the coefficients.</li>
+      <li>Streamlit deployment.</li>
+    </ul>
+    <p><a href="https://github.com/feliscaclarrisya-sys/lifestyle-disease-risk">GitHub repository</a></p>
+  </div></section>
 
-    <section id="projects">
-      <div class="wrap">
-        <p class="kicker">Selected work</p>
-        <h2>Projects</h2>
+  <section class="case" id="stunting"><div class="wrap">
+    <p class="eyebrow">PROJECT 03 · ANALYSIS</p>
+    <h2>Child Stunting and Socioeconomic Factors</h2>
+    <p class="lead">Country-level look at child stunting. The table is small, so these charts are the result I would rather show than one accuracy score.</p>
+    <div class="stats">
+      <div class="stat"><b>307</b><span>Rows</span></div>
+      <div class="stat"><b>77</b><span>Countries</span></div>
+      <div class="stat"><b>2000–2023</b><span>Years in the charts</span></div>
+      <div class="stat"><b>2 models</b><span>Logistic regression and Random Forest</span></div>
+    </div>
+    <div class="photos">
+      <div class="photo"><img src="https://h.uguu.se/pyeLQcCN.jpg" alt="Highest stunting prevalence by country"><p class="cap">Highest average stunting prevalence in the dataset.</p></div>
+      <div class="photo"><img src="https://n.uguu.se/kreYhaFJ.jpg" alt="Stunting trend over time"><p class="cap">Average prevalence in the dataset falls after the mid-2000s, with a few rebounds.</p></div>
+    </div>
+    <h3>What I worked on</h3>
+    <ul>
+      <li>Business understanding and the project question.</li>
+      <li>Feature engineering for the socioeconomic variables.</li>
+      <li>Random Forest model and the feature-importance review.</li>
+      <li>Streamlit page and the written conclusion.</li>
+    </ul>
+    <p class="cap">Poverty rate and fertility rate were the socioeconomic factors most discussed alongside stunting risk.</p>
+    <p><a href="https://github.com/feliscaclarrisya-sys/child-stunting-socioeconomic">GitHub repository</a></p>
+  </div></section>
 
-        <article class="project">
-          <p class="num">01</p>
-          <div>
-            <h3>Publication Data Warehouse</h3>
-            <p>A star-schema warehouse and Power BI dashboard for faculty publication performance, including journal quartiles and cross-program collaboration.</p>
-            <div class="tools">
-              <span>Power BI</span>
-              <span>Power Query</span>
-              <span>DAX</span>
-              <span>Data warehousing</span>
-            </div>
-            <div class="actions">
-              <a href="project-warehouse.html">View project</a>
-              <a href="https://github.com/feliscaclarrisya-sys/publication-warehouse-powerbi">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <p class="num">02</p>
-          <div>
-            <h3>Lifestyle Disease Risk</h3>
-            <p>A logistic regression project that classifies disease risk from lifestyle and health indicators, with a Streamlit checker for the result.</p>
-            <div class="tools">
-              <span>Python</span>
-              <span>scikit-learn</span>
-              <span>SMOTE</span>
-              <span>Streamlit</span>
-            </div>
-            <div class="actions">
-              <a href="project-disease-risk.html">View project</a>
-              <a href="https://github.com/feliscaclarrisya-sys/lifestyle-disease-risk">GitHub</a>
-              <a href="https://project-datnal-ht76ctlxjsdbjvpdn2fgev.streamlit.app/">Open app</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <p class="num">03</p>
-          <div>
-            <h3>Child Stunting and Socioeconomic Factors</h3>
-            <p>An analysis of country-level socioeconomic factors related to child stunting risk, using exploratory analysis and a Random Forest model.</p>
-            <div class="tools">
-              <span>Python</span>
-              <span>Random Forest</span>
-              <span>Feature importance</span>
-              <span>Streamlit</span>
-            </div>
-            <div class="actions">
-              <a href="project-stunting.html">View project</a>
-              <a href="https://github.com/feliscaclarrisya-sys/child-stunting-socioeconomic">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap">
-        <p class="kicker">Let's connect</p>
-        <h2>Contact</h2>
-        <p>I am open to data analyst and big data internships, and to conversations about analytics, BI, and machine learning projects.</p>
-        <div class="contact-links">
-          <a href="mailto:patricia.felisca@student.umn.ac.id">patricia.felisca@student.umn.ac.id</a>
-          <a href="https://www.linkedin.com/in/patricia-felisca-clarrisya-5a845a3b0">LinkedIn</a>
-          <a href="https://github.com/feliscaclarrisya-sys">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">Patricia Felisca Clarrisya · Information Systems · Universitas Multimedia Nusantara</div>
-  </footer>
+  <section id="contact"><div class="wrap">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Contact</h2>
+    <p class="lead">Open to data analyst and big data internships.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:feliscaclarrisya@gmail.com">feliscaclarrisya@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/patricia-felisca-clarrisya-5a845a3b0">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/feliscaclarrisya-sys">GitHub</a>
+    </div>
+  </div></section>
+</main>
+<footer>Felisca · Patricia Felisca Clarrisya · Information Systems · Universitas Multimedia Nusantara</footer>
 </body>
 </html>
