@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifestyle Disease Risk | Patricia Felisca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Patricia Felisca</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <header class="page-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#projects">Back to projects</a>
+      <p class="kicker">Project 02 · Machine learning</p>
+      <h1>Lifestyle Disease Risk</h1>
+      <p class="lede">A group academic project that classifies low and high disease risk from lifestyle and basic health indicators.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="block">
+          <h2>Overview</h2>
+          <p>The model estimates whether a person falls into a higher disease-risk group from features such as BMI, blood pressure, sleep, daily steps, smoking, and alcohol use. The dataset is synthetic and public, so the app is a methods demo, not a medical tool.</p>
+        </div>
+        <div class="block">
+          <h2>Data</h2>
+          <p>Health &amp; Lifestyle Dataset by chik0di on Kaggle. About 100,000 synthetic rows, CC0 license. This project used 80,000 rows. The target, disease_risk, is imbalanced: roughly three quarters of the rows are low risk.</p>
+        </div>
+        <div class="block">
+          <h2>What I worked on</h2>
+          <ul>
+            <li>Exploratory analysis of the lifestyle and health features.</li>
+            <li>Feature engineering for blood-pressure ratio, pulse pressure, obesity, low sleep, and a simple risk score.</li>
+            <li>An 80/20 split, with scaling fitted on the training set only.</li>
+            <li>SMOTE applied only to the training set.</li>
+            <li>Logistic regression tuned with grid search, then interpreted through its coefficients.</li>
+            <li>A Streamlit app so the result can be tried without opening the notebook.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h2>App</h2>
+          <div class="actions">
+            <a href="https://project-datnal-ht76ctlxjsdbjvpdn2fgev.streamlit.app/">Open the Streamlit app</a>
+            <a href="https://github.com/feliscaclarrisya-sys/lifestyle-disease-risk">View GitHub repository</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
