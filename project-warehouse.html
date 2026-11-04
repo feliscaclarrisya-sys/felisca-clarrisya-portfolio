@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publication Data Warehouse | Patricia Felisca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Patricia Felisca</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <header class="page-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#projects">Back to projects</a>
+      <p class="kicker">Project 01 · Power BI</p>
+      <h1>Publication Data Warehouse</h1>
+      <p class="lede">A group academic project that organized faculty publication data into a star schema and a Power BI dashboard.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="block">
+          <h2>Overview</h2>
+          <p>The question was not only how many papers a faculty produced, but whether that output was concentrated in higher-quartile journals. The warehouse was built so publication count, quartile, and collaboration could be compared across faculties and study programs.</p>
+        </div>
+        <div class="block">
+          <h2>What I worked on</h2>
+          <ul>
+            <li>Cleaning and standardizing publication and lecturer data in Power Query.</li>
+            <li>A star schema with fact and dimension tables for multidimensional analysis.</li>
+            <li>DAX measures for publication count and Q1–Q4 share.</li>
+            <li>Dashboard pages for trends, quartiles, and cross-program collaboration.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h2>Result</h2>
+          <p>A rising publication count did not always mean a higher share of Q1 journals. The dashboard made that gap visible by faculty and study program.</p>
+        </div>
+        <div class="block">
+          <h2>Tools</h2>
+          <div class="tools">
+            <span>Power BI</span>
+            <span>Power Query</span>
+            <span>DAX</span>
+            <span>Star schema</span>
+          </div>
+          <div class="actions">
+            <a href="https://github.com/feliscaclarrisya-sys/publication-warehouse-powerbi">View GitHub repository</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
